@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.gradientBg {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@theme {
+  /* Primary (botones principales) */
+  --color-primary: #f58800;
+  --color-primary-hover: #ff9a1f;
+  --color-primary-active: #d97800;
+
+  /* Fondos */
+  --color-background: #051821;
+  --color-surface: #0b2530;
+  --color-surface-hover: #10303d;
+
+  /* Secundario (botones) */
+  --color-secondary: #807f7f;
+  --color-secondary-hover: #939292;
+
+  /* Acento (headers secundarios) */
+  --color-accent: #169e9b;
+  --color-accent-hover: #1bb8b5;
+
+  /* Bordes */
+  --color-border: #1f3a46;
+  --color-border-button: #ffb64d;
+  --color-border-button-secondary: #a8a7a7;
+
+  /* Texto */
+  --color-foreground: #e8eef0;
+  --color-muted: #8fa3ab;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: white;
+  }
+}
+
+p,
+span,
+li,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: white;
+}
+
+figure.wp-block-image {
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.grid-lines {
+  --s: 25px;
+  --t: 1px; /* the thickness */
+
+  background: conic-gradient(
+      from 90deg at var(--t) var(--t),
+      #0000 25%,
+      #142332 0
+    )
+    0 0 / var(--s) var(--s);
+  /* you probably don't need to set any size in your case */
+  width: calc(round(down, 100%, var(--s)) + var(--t));
+  height: calc(8 * var(--s) + var(--t));
+}
