@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Carauz Design — Headless WordPress Portfolio
 
-## Getting Started
+A personal website built with a modern headless WordPress setup. It combines a personal blog and an interactive portfolio to showcase my work, projects, and experience in web development and graphic design.
 
-First, run the development server:
+## About the Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Carauz Design is my personal space to share ideas, publish articles, and present my professional work.
+
+I use WordPress to manage content and Next.js to build a modern and interactive frontend. This approach gives me more control over the website's design and user experience.
+
+## Main Features
+
+- **Personal Blog:** Publish articles and share ideas about design and technology.
+- **Interactive Portfolio:** Present my projects, skills, and professional experience.
+- **Headless WordPress:** Manage website content with WordPress and display it through a separate frontend.
+- **Dynamic Content:** Fetch and display blog posts using GraphQL.
+- **Responsive Design:** Create a clean experience for desktop, tablet, and mobile devices.
+- **Custom UI:** Build modern layouts and reusable components with Tailwind CSS.
+
+## Technologies
+
+- **WordPress:** Content management system.
+- **Next.js:** Frontend development.
+- **React:** Interactive user interfaces.
+- **TypeScript:** More organized and reliable code.
+- **GraphQL:** Request content from WordPress.
+- **Tailwind CSS:** Styling and responsive layouts.
+- **Git and GitHub:** Version control and project management.
+
+## How It Works
+
+WordPress manages the content, while Next.js displays it on the website.
+
+GraphQL connects both parts and helps the frontend request the content it needs.
+
+```text
+WordPress
+   |
+   | GraphQL
+   v
+Next.js + React
+   |
+   v
+Website
+Blog + Interactive Portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Design and Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+As a graphic designer with over 9 years of experience, I combine visual design skills with web development to create a consistent and user-friendly experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project allows me to explore modern web technologies, improve my development skills, and build a professional online presence.
 
-## Learn More
+## Project Goals
 
-To learn more about Next.js, take a look at the following resources:
+- Build a personal website using a headless WordPress architecture.
+- Create an interactive portfolio to showcase my work.
+- Publish and manage blog content with WordPress.
+- Improve my skills in Next.js, React, TypeScript, and GraphQL.
+- Combine design and development in one professional project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Live Website
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[https://carauzdesign.com](https://carauzdesign.com)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Created by Camilo Arauz**  
+Graphic Designer and Web Developer
