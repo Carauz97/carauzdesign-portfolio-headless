@@ -8,7 +8,7 @@ export default function Navbar() {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <nav className="flex items-center border m-4 max-md:w-full max-md:justify-between justify-center border-slate-700 px-6 py-4 rounded-full text-white text-sm">
+    <nav className="z-10 flex items-center border md:m-4 max-md:w-full max-md:justify-between justify-center border-slate-700 px-6 py-4 rounded-full text-white text-sm">
       <a href="https://prebuiltui.com">
         <svg
           width="32"

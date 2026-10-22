@@ -8,9 +8,12 @@ export default async function PostGrid() {
   const posts = await getAllPosts();
 
   return (
-    <div className="grid md:grid-cols-3 gap-2 mx-auto max-w-md overflow-hidden shadow-md md:max-w-4xl my-4">
+    <div className="grid md:grid-cols-3 gap-2 mx-auto max-w-md overflow-hidden shadow-md md:max-w-4xl">
       {posts.map((post) => (
-        <div key={post.id} className="p-4 border border-slate-700">
+        <div
+          key={post.id}
+          className="rounded rounded-2xl p-4 border border-slate-700"
+        >
           <Link key={post.id} href={`blog/${post.slug}`}>
             <h3 className="text-xl">{post.title}</h3>
           </Link>

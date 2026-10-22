@@ -16,6 +16,7 @@ export default function PortfolioPage() {
   return (
     <>
       <Navbar />
+
       <HeroBar title={pageTitle} />
 
       <main className="px-4 py-8">
