@@ -26,7 +26,7 @@ export default function Blog() {
 
       <main className="px-4 py-8">
         <div className={`${contentWidth} space-y-6`}>
-          <div className="grid gap-6 md:grid-cols-[14rem_1fr]">
+          <div className="grid gap-6 md:grid-cols-[10rem_1fr]">
             <aside
               aria-labelledby="categorias-titulo"
               className={`${panel} p-4`}

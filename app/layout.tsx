@@ -29,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <div
             style={{
               background:
-                "radial-gradient(circle,rgba(245, 136, 0, 1) 0%, rgba(5, 24, 33, 1) 100%);",
+                "radial-gradient(circle,rgba(245, 136, 0, 1) 0%, rgba(5, 24, 33, 1) 100%)",
             }}
             className="z-200 absolute top-100 left-0 min-h-50 a"
           ></div>

@@ -10,6 +10,13 @@ const nextConfig: NextConfig = {
       expire: 86400,
     },
   },
+  images: {
+    remotePatterns: [
+      new URL(
+        "https://primary-production-fdfe8.up.railway.app/wp-content/uploads/**",
+      ),
+    ],
+  },
 };
 
 export default nextConfig;
