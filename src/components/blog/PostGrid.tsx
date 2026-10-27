@@ -2,6 +2,17 @@ import { getAllPosts, getPostBySlug } from "@/services/post.service";
 import Link from "next/link";
 
 const CurrentDate = new Date().toLocaleTimeString();
+
+type excerpt = {
+  s: string;
+  l: number;
+};
+
+const reduceExcerpt = ({ s, l }: excerpt) => {
+  const cadena = s.slice(0, l) + "...";
+  return cadena;
+};
+
 export default async function PostGrid() {
   console.log("Component rendered at:", CurrentDate);
 
@@ -19,7 +30,9 @@ export default async function PostGrid() {
           </Link>
           <div
             className="mt-6"
-            dangerouslySetInnerHTML={{ __html: post.excerpt }}
+            dangerouslySetInnerHTML={{
+              __html: reduceExcerpt({ s: post.excerpt, l: 200 }),
+            }}
           />
         </div>
       ))}

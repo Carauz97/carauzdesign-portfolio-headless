@@ -171,11 +171,15 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-foreground">
             ¿Tienes un proyecto en mente?
           </h2>
-          <p className="mt-2 text-muted">
+          <p className="mt-2 text-muted text-center">
             Cuéntame qué necesitas y te propongo una solución.
           </p>
-          <Link href="/contacto" className={`${btnPrimary} mt-6`}>
-            Hablemos
+          <Link
+            href="https://linkedin.com/in/carauzarauz97"
+            target="_blank"
+            className={`${btnPrimary} mt-6`}
+          >
+            Contáctame
           </Link>
         </section>
       </main>

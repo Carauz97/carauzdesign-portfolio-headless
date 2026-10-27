@@ -24,7 +24,7 @@ export default function ProjectCase({ project }: Props) {
     title,
     category,
     url,
-    image,
+    images,
     overview,
     features,
     stack,
@@ -34,7 +34,7 @@ export default function ProjectCase({ project }: Props) {
 
   return (
     <article aria-labelledby={`project-${id}`} className={` overflow-hidden`}>
-      <header className="outline-solid flex flex-col gap-4 border-b border-border p-6 md:flex-row md:items-start md:justify-between md:p-8">
+      <header className=" flex flex-col gap-4  p-6 md:flex-row md:items-start md:justify-between md:p-8">
         <div>
           <span
             style={{ color: "var(--color-primary)" }}
@@ -63,20 +63,25 @@ export default function ProjectCase({ project }: Props) {
           </a>
         )}
       </header>
+      <div className="grid gap-4 md:grid-cols-2">
+        {images &&
+          images.length > 0 &&
+          images?.map((im, k) => {
+            return (
+              <Image
+                key={k}
+                src={im.src}
+                alt={im.alt}
+                width={1600}
+                height={900}
+                sizes="(min-width: 896px) 896px, 100vw"
+                className="h-auto w-full  rounded-2xl"
+              />
+            );
+          })}
+      </div>
 
-      {/* CAPTURA (opcional) */}
-      {image && (
-        <Image
-          src={image.src}
-          alt={image.alt}
-          width={1600}
-          height={900}
-          sizes="(min-width: 896px) 896px, 100vw"
-          className="h-auto w-full border-b border-border"
-        />
-      )}
-
-      {/* CUERPO: narrativa a la izquierda, ficha técnica a la derecha */}
+      {/* narrativa a la izquierda, ficha técnica a la derecha */}
       <div className="grid gap-8 p-6 md:grid-cols-[1fr_17rem] md:p-8">
         <div className="@container min-w-0 space-y-8">
           <section>
